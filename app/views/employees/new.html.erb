@@ -1,0 +1,9 @@
+<h1>New employee</h1>
+
+<%= form_for @employees do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :division_id %>
+  <%= f.number_field :division_id %>
+  <%= f.submit  %>
+<% end %>
